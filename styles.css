@@ -84,18 +84,18 @@ nav a:hover {
 }
 
 .hero-photo {
-    flex: 0 0 100px;
+    flex: 0 0 180px;
     display: flex;
     justify-content: center;
 }
 
 .hero-photo img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #7cc7ff;
-    box-shadow: 0 8px 24px rgba(124, 199, 255, 0.2);
+    box-shadow: 0 10px 28px rgba(124, 199, 255, 0.22);
     background: #0f0f0f;
 }
 
