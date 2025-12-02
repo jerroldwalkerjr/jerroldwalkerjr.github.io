@@ -14,8 +14,7 @@
     <header>
         <nav>
             <h1 class="logo">Jerrold Walker Jr</h1>
-            <div class="nav-actions">
-                <ul>
+            <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -24,10 +23,7 @@
                     <li><a href="#activities">Activities</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="theme-toggle" type="button" aria-label="Toggle color theme">
-                    <span class="theme-label">Light mode</span>
-                </button>
-            </div>
+                </div>
         </nav>
     </header>
 
@@ -140,9 +136,7 @@
                 <li>Designed and implemented full architecture for a real-time adaptive learning agent using LLMs.</li>
                 <li>Built FastAPI backend with modular services, secure REST endpoints, and curriculum-driven database models.</li>
                 <li>Developed AI reasoning pipeline with GPT-4o-mini for dynamic lesson planning and content generation.</li>
-                <li>Engineered student-modeling system to track learner progress and personalize instruction.</li>
-            </ul>
-        </div>
+                <li>Engineered student-modeling system to track learner progress and personalize instruction.</li></ul>
 
         <div class="project">
             <h3>Personal Expense Tracker</h3>
@@ -150,9 +144,7 @@
             <ul>
                 <li>Built a cross-platform app to log expenses/income with category tags, recurring items, and reminders.</li>
                 <li>Implemented monthly/weekly dashboards with interactive charts and exportable CSV/PDF reports.</li>
-                <li>Added secure auth and cloud sync with offline-first caching for fast mobile performance.</li>
-            </ul>
-        </div>
+                <li>Added secure auth and cloud sync with offline-first caching for fast mobile performance.</li></ul>
     </section>
 
     <!-- EXPERIENCE -->
@@ -166,9 +158,7 @@
                 <li>Architected the full-stack design for ExpertAgent, a personalized LLM-powered learning platform.</li>
                 <li>Developed production-quality FastAPI backend with session management and modular services.</li>
                 <li>Created an AI reasoning engine integrating GPT-4o-mini for dynamic, context-aware learning content.</li>
-                <li>Defined and implemented a student-modeling framework to enhance personalization and pacing.</li>
-            </ul>
-        </div>
+                <li>Defined and implemented a student-modeling framework to enhance personalization and pacing.</li></ul>
 
         
 
@@ -194,33 +184,6 @@
 
     <footer>
         <p>© 2025 Jerrold Walker Jr</p>
-    </footer>
+    </footer>\n</body>\n</html>\n
 
 
-    <script>
-        (() => {
-            const STORAGE_KEY = "preferred-theme";
-            const toggleButton = document.querySelector(".theme-toggle");
-            const label = toggleButton ? toggleButton.querySelector(".theme-label") : null;
-
-            const applyTheme = (theme) => {
-                document.body.setAttribute("data-theme", theme);
-                localStorage.setItem(STORAGE_KEY, theme);
-                if (label) {
-                    label.textContent = theme === "dark" ? "Light mode" : "Dark mode";
-                }
-            };
-
-            const saved = localStorage.getItem(STORAGE_KEY);
-            const initial = saved === "light" || saved === "dark" ? saved : "dark";
-            applyTheme(initial);
-
-            toggleButton?.addEventListener("click", () => {
-                const current = document.body.getAttribute("data-theme") || "dark";
-                const next = current === "dark" ? "light" : "dark";
-                applyTheme(next);
-            });
-        })();
-    </script>
-</body>
-</html>
