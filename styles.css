@@ -72,8 +72,16 @@ nav a:hover {
     color: #7cc7ff;
 }
 
-.cta {
+.cta-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
     margin-top: 20px;
+}
+
+.cta {
+    margin-top: 0;
     display: inline-block;
     padding: 12px 24px;
     background: #7cc7ff;
@@ -81,6 +89,17 @@ nav a:hover {
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
+}
+
+.cta.secondary {
+    background: transparent;
+    color: #7cc7ff;
+    border: 1.5px solid #7cc7ff;
+}
+
+.cta.secondary:hover {
+    color: #000;
+    background: #7cc7ff;
 }
 
 .hero-photo {
